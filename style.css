@@ -1,0 +1,107 @@
+
+
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: radial-gradient(whitesmoke, black);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Typography */
+  
+  h1 {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif, Georgia, 'Times New Roman', Times;
+    text-decoration: dotted 5px;
+    color: darkorange;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Components */
+  
+  .main {
+    position: relative;
+    border: solid 5px black;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+    
+  }
+  
+  
+  .main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pexels-shvetsa-6664195.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: brightness(50%); /* Reduce brightness */
+    z-index: -1;
+  }
+  
+  button {
+    border: solid 2px black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    cursor: pointer; /* added cursor pointer */
+    transition: all 0.3s ease; /* moved transition to button */
+  }
+  
+  button:hover {
+    color: red;
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* IDs */
+  
+  #start-el, #draw-el {
+    background-color: goldenrod;
+  }
+  
+  #draw-el {
+    margin-top: 10px;
+  }
+  
+  #card-el, #sum-el {
+    color: goldenrod;
+    margin-top: 0;
+  }
+  
+  #display-el {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    max-width: 50%;
+    margin: auto;
+  }
+  #amount-el{
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-image: radial-gradient(whitesmoke, black);
+
+  }
